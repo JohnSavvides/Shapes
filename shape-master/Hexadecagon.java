@@ -5,17 +5,17 @@
  * @author Mr. Jaffe 
  * @version 2017-07-14
  */
-public class Circle implements Shape
+public class Hexadecagon implements Shape
 {
-  private int radius;
+  private int sidelength;
   private String color;
 
   /**
    * Constructor for objects of class Circle
    */
-  public Circle(int radius, String color)
+  public Hexadecagon(int radius, String color)
   {
-    this.radius = radius;
+    this.sidelength = sidelength;
     this.color = color;
   }
 
@@ -26,7 +26,7 @@ public class Circle implements Shape
    */
   public double getArea()
   {
-    return Math.PI * this.radius * this.radius;
+    return (4*(sidelength*sidelength))/(4*Math.coTanA(Math.PI/6));
   }
 
   /**
@@ -36,7 +36,7 @@ public class Circle implements Shape
    */
   public double getPerimeter()
   {
-    return 2 * Math.PI * this.radius;
+    return 16 * sidelength;
   }
 
   /**
