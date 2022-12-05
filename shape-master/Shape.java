@@ -1,4 +1,3 @@
-
 /**
  * Shape interface is the template used to define geometric shapes
  * 
@@ -7,24 +6,24 @@
  */
 public interface Shape
 {
-  /**
-   * Computes the area of the shape
-   * 
-   * @return    The computed area
-   */
-  double getArea();
+    /**
+     * Computes the area of the shape
+     * 
+     * @return    The computed area
+     */
+    double getArea();
 
-  /**
-   * Computes the perimeter of the shape
-   * 
-   * @return    The computed perimeter
-   */
-  double getPerimeter();
+    /**
+     * Computes the perimeter of the shape
+     * 
+     * @return    The computed perimeter
+     */
+    double getPerimeter();
 
-  /**
-   * Gets the shape's color
-   * 
-   * @return    The color
-   */
-  String getColor();
+    /**
+     * Gets the shape's color
+     * 
+     * @return    The color
+     */
+    String getColor();
 }

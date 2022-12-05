@@ -5,18 +5,20 @@
  * @author Mr. Jaffe 
  * @version 2017-07-14
  */
-public class Hexadecagon implements Shape
+public class RegularPolygon implements Shape
 {
   private int sidelength;
   private String color;
-
+  private int sides;
+  
   /**
    * Constructor for objects of class Circle
    */
-  public Hexadecagon(int radius, String color)
+  public RegularPolygon(int sidelength, String color, int sides)
   {
     this.sidelength = sidelength;
     this.color = color;
+    this.sides = sides;
   }
 
   /**
@@ -26,7 +28,8 @@ public class Hexadecagon implements Shape
    */
   public double getArea()
   {
-    return (4*(sidelength*sidelength))/(4*Math.coTanA(Math.PI/6));
+      double angle = Math.toRadians(180/sides);
+      return 4*(sidelength*sidelength)*(1/(Math.PI/angle));
   }
 
   /**
@@ -36,7 +39,7 @@ public class Hexadecagon implements Shape
    */
   public double getPerimeter()
   {
-    return 16 * sidelength;
+    return sides * sidelength;
   }
 
   /**
