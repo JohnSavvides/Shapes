@@ -28,8 +28,8 @@ public class RegularPolygon implements Shape
    */
   public double getArea()
   {
-      double angle = Math.toRadians(180/sides);
-      return 4*(sidelength*sidelength)*(1/(Math.PI/angle));
+      double apothem = sidelength/(2*(Math.tan(Math.PI/sides)));
+      return apothem*sides*sidelength*0.5;
   }
 
   /**
